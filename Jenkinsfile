@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('https://registry.hub.docker.com', 'anbus') {
+    docker.withRegistry('192.168.0.136', 'pion') {
 
         def customImage = docker.build("anbu/dockerwebapp")
 
